@@ -13,7 +13,7 @@
             background-color: #f0f0f0;
         }
         header {
-            background-color: #333;
+            background-color: #00FFFF;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -52,6 +52,48 @@
             margin: 10px;
             padding: 10px;
         }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00FFFF;
+            color: #0000FF;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #44FFFF;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+        }
+        a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #000; 
+            bottom: -5px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        a:hover::before {
+            transform: scaleX(1);
+        }
+        footer {
+            background-color: #333;
+            color: #00FFFF;
+            text-align: center;
+            padding: 20px 0;
+            position: flex;
+            bottom: 0;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -70,4 +112,7 @@
         </div>
     </div>
 </body>
+<footer>
+    <p>&copy; 2024 Ballzzzzz Studios. All rights reserved.</p>
+</footer>
 </html>
